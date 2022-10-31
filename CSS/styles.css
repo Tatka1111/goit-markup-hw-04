@@ -106,6 +106,13 @@ a {
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
+
+.contacts-list {
+  list-style: none;
+  display: flex;
+  color: var(--primary-text-color);
+}
+
 .email {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -113,9 +120,12 @@ a {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-.email:hover,
-.email:focus {
-  color: var(--accent-text-color);
+.phone {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .icon-envelope {
@@ -129,18 +139,9 @@ a {
 .icon-envelope:focus {
   fill: var(--accent-text-color);
 }
-.contacts-list .item:hover,
-.contacts-list .item:focus {
-  color: var(--accent-text-color);
-  fill: var(--accent-text-color);
-}
-.phone {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-}
+
+
+
 
 .icon-smartphone {
   fill: var(--primary-text-color);
@@ -148,17 +149,18 @@ a {
   height: 16px;
   margin-right: 10px;
 }
-.icon-smartphone:hover {
+.icon-smartphone:hover,
+.icon-smartphone:focus {
   fill: var(--accent-text-color);
 }
 .contacts {
   margin-left: auto;
 }
-.contacts-list {
-  list-style: none;
-  display: flex;
-}
 
+.email:hover,
+.email:focus {
+  color: var(--accent-text-color);
+}
 
 
 .contacts .item + .item {
@@ -327,7 +329,7 @@ img {
   margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--secondary-bg-color);
+ 
 }
 .section-title {
   margin: 0;
@@ -439,8 +441,8 @@ img {
 }
 .socials-link:hover,
 .socials-link:focus {
- fill: var(--accent-text-color);
- border-color: var(--accent-text-color);
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-text-color);
 }
 .socials-icon-special {
   fill: var(--primary-bg-color);
@@ -452,7 +454,8 @@ img {
 }
 .socials-icon:hover,
 .socials-icon:focus {
- fill: var(--accent-text-color);
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-text-color);
 
 }
 .clients {
@@ -685,8 +688,8 @@ color: var(--primary-bg-color);
 }
 .networks-link:hover,
 .networks-link:focus {
-  color: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-text-color);
 }
 .networks-link {
   display: flex;
@@ -697,15 +700,6 @@ color: var(--primary-bg-color);
   background-color: rgba(255, 255, 255, 0.1);;
   border-radius: 50%;
 }
-.networks-link-special {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: var(--accent-text-color);
-  border-radius: 50%;
-}
 
 .networks-item {
   display: flex;
@@ -713,17 +707,13 @@ color: var(--primary-bg-color);
   width: 44px;
   height: 44px;
   fill: var(--icon-color);
-  
 }
-.socials-icon-special {
-  fill: var(--primary-bg-color);
-  background-color: var(--accent-text-color);
-}
+
 .networks-icon {
   fill: var(--primary-bg-color);
 }
 .networks-icon:hover,
 .networks-icon:focus {
-  fill: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-text-color);
 }
