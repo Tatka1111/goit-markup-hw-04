@@ -135,8 +135,8 @@ a {
   margin-right: 10px;
   align-items: baseline;
 }
-.icon-envelope:hover,
-.icon-envelope:focus {
+.email:hover .icon-envelope,
+.email:focus .icon-envelope {
   fill: var(--accent-text-color);
 }
 
@@ -149,8 +149,8 @@ a {
   height: 16px;
   margin-right: 10px;
 }
-.icon-smartphone:hover,
-.icon-smartphone:focus {
+.phone:hover .icon-smartphone,
+.phone:focus .icon-smartphone {
   fill: var(--accent-text-color);
 }
 .contacts {
@@ -409,6 +409,15 @@ img {
   gap: 10px;
   margin-top: 10px;
 }
+.socials-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-bg-color);
+  
+}
 
 
 .socials-link {
@@ -420,47 +429,26 @@ img {
   background-color: var(--primary-bg-color);
   border-radius: 50%;
 }
-.socials-link-special {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: var(--accent-text-color);
-  border-radius: 50%;
-}
 
-.socials-item {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-  width: 44px;
-  height: 44px;
-  fill: var(--icon-color);
-  
-}
 .socials-link:hover,
 .socials-link:focus {
-  fill: var(--primary-bg-color);
   background-color: var(--accent-text-color);
 }
 
 .socials-icon {
   fill: var(--icon-color);
-  border-color: var(--primary-bg-color);
 }
-.socials-icon:hover,
-.socials-icon:focus {
-  fill: var(--primary-bg-color);
-  background-color: var(--accent-text-color);
 
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--primary-bg-color);
+  
 }
 .clients {
   margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
   display: flex;
-  
  
 }
 .clients-list {
@@ -470,6 +458,7 @@ img {
   justify-content: center;
   gap: 30px;
   padding: 0;
+  margin: 0;
 }
 .clients-link {
   width: 170px;
@@ -565,7 +554,6 @@ img {
 }
 .card-set-link:hover,
 .card-set-link:focus {
-  border-color: var(--accent-text-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-content {
